@@ -75,8 +75,8 @@ console.log(diff)
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-const boundary=function(n){
-if((n>=20 && n<=100)|| (n===400)){
+const boundary=function(n1){
+if((n1>=20 && n1<=100)|| (n1===400)){
 return true
 }
 return false
@@ -145,13 +145,14 @@ console.log(r)
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-const upperFirst= function (_dem) {
+
+/*const upperFirst= function (_dem) {
     let toCamelCase
     for (let i = 0; i <=_dem.length; i++) { 
     
     }
     }
-
+*/
 
     console.log("--------- >Got this from web <------------")
 camelize = function camelize(str) {
@@ -161,24 +162,39 @@ camelize = function camelize(str) {
       });
   }
 
-console.log(camelize("JavaScript Exercises"));
-console.log(camelize("JavaScript exercises"));
-console.log(camelize("JavaScriptExercises"));
+console.log(camelize("javaScript exercises"));
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
+/*
 const cutString=function(givenString){
-let modifiedString
 
+let removedItem = givenString.pop()
+removedItem+=removedItem.splice(0,1)
+return
 }
+let newString=cutString("My Name is Veena")
+console.log(newString)
+*/
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
+const giveMeRandom = function(n) {
+    let arrWithNums = [];
+    for(i = 0; i < n; i++) {
+         arrWithNums.push(Math.floor(Math.random() * 10)); 
+    }
+    return arrWithNums;
+}
+let ran=giveMeRandom(4)
+console.log(ran);
 /* WRITE YOUR ANSWER HERE */
 
 /* WHEN YOU ARE FINISHED
