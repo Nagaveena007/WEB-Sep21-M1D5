@@ -11,6 +11,20 @@ ASSIGNMENT RULES
 /* EXERCISE 1
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
+const area = function(length, breadth) {
+
+    if ((length === undefined)||(breadth === undefined)) {
+       
+     return "ERROR: please provide length and breadth of the rectangle"
+    
+    }
+
+    let result = 2*(length + breadth)
+    return result // The RETURN keyword will EXIT the function IMMEDIATELY, optionally providing some value
+}
+let areaOfRectangle=area(10,12)
+console.log(areaOfRectangle=area(10,12)
+)
 
 /* WRITE YOUR ANSWER HERE */
 
