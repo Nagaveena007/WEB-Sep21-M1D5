@@ -20,11 +20,10 @@ const area = function(length, breadth) {
     }
 
     let result = 2*(length + breadth)
-    return result // The RETURN keyword will EXIT the function IMMEDIATELY, optionally providing some value
-}
+    return result
+ }
 let areaOfRectangle=area(10,12)
-console.log(areaOfRectangle=area(10,12)
-)
+console.log(areaOfRectangle)
 
 /* WRITE YOUR ANSWER HERE */
 
@@ -33,12 +32,42 @@ console.log(areaOfRectangle=area(10,12)
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
+const crazySum=function(p1,p2)
+{
+if(p1===p2){
+    let sum1=3*(p1+p2)
+    return sum1
+ }
+ else{
+    let sum2=(p1+p2)
+    return sum2
+ }
+
+}
+ let sum=crazySum(2,5)
+console.log(sum)
+
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
+let b=19
+const crazyDiff=function(a){
+if(a>19){
+    let tripleResult= (3*(a-19))
+    return tripleResult
+}
+else{
+    let res=(a-19)
+    return res
+}
+
+}
+let diff=crazyDiff(22)
+console.log(diff)
 
 /* WRITE YOUR ANSWER HERE */
 
@@ -46,13 +75,35 @@ console.log(areaOfRectangle=area(10,12)
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
+const boundary=function(n){
+if((n>=20 && n<=100)|| (n===400)){
+return true
+}
+return false
+}
+
+let answer=boundary(300)
+console.log(answer)
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
+const strivify=function(fStr){
+if(fStr==="strive"){
 
+return
+}
+else{
+  let re=fStr+"strive"
+}
+return re
+
+}
+let strive=strivify("strive")
+console.log(strive)
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 6
@@ -60,24 +111,68 @@ console.log(areaOfRectangle=area(10,12)
  HINT: Modulus Operator
 */
 
+const check3and7=function(positiveNumber){
+if((positiveNumber%3===0)&&(positiveNumber%7===0)){
+    console.log(positiveNumber,"is a multiple of 3 or 7")
+    return
+}
+else{
+    console.log(positiveNumber,"is not a multiple of 3 or 7")
+}
+return
+}
+let givenPositiveNumber=check3and7(21)
+
+
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
-
+const reverseString= function (str) {
+    let  nString
+    for (let i = str.length - 1; i >= 0; i--) { 
+       
+        nString = nString + str[i]
+    }
+    return nString;
+}
+let r=reverseString("hello");
+console.log(r)
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
+const upperFirst= function (_dem) {
+    let toCamelCase
+    for (let i = 0; i <=_dem.length; i++) { 
+    
+    }
+    }
+
+
+    console.log("--------- >Got this from web <------------")
+camelize = function camelize(str) {
+    return str.replace(/\W+(.)/g, function(match, chr)
+     {
+          return chr.toUpperCase();
+      });
+  }
+
+console.log(camelize("JavaScript Exercises"));
+console.log(camelize("JavaScript exercises"));
+console.log(camelize("JavaScriptExercises"));
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
+const cutString=function(givenString){
+let modifiedString
 
+}
 /* WRITE YOUR ANSWER HERE */
 
 /* EXERCISE 10
