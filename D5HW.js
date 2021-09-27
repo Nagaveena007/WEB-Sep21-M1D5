@@ -155,6 +155,7 @@ console.log(r)
 */
 
     console.log("--------- >Got this from web <------------")
+    
 camelize = function camelize(str) {
     return str.replace(/\W+(.)/g, function(match, chr)
      {
@@ -162,7 +163,7 @@ camelize = function camelize(str) {
       });
   }
 
-console.log(camelize("javaScript exercises"));
+console.log(camelize("javascript exercises"));
 
 /* WRITE YOUR ANSWER HERE */
 
@@ -187,11 +188,11 @@ console.log(newString)
 */
 
 const giveMeRandom = function(n) {
-    let arrWithNums = [];
+    let arr = [];
     for(i = 0; i < n; i++) {
-         arrWithNums.push(Math.floor(Math.random() * 10)); 
+         arr.push(Math.floor(Math.random() * 10)); 
     }
-    return arrWithNums;
+    return arr;
 }
 let ran=giveMeRandom(4)
 console.log(ran);
